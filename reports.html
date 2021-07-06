@@ -1,0 +1,72 @@
+<html>
+	
+<head>
+    <title>Doringo | Contact</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="logo.ico">
+	<script src="javascript.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
+</head>
+
+<body>
+	
+	<div class="container1">
+	</div>
+
+	<div class="top_bar">
+		<a class="main_page_ref" href="index.html" src="logo.png" alt="Doringo" style="float:left;width:30px;height:80px;">
+		<a class="glow" href="suggestions.html"><i class="far fa-lightbulb"></i> </a>
+		<a class="glow active" href="reports.html"><i class="fas fa-bug"></i> </a>
+		<a class="glow" href="about.html"><i class="fas fa-info-circle"></i> </a>
+		<a class="daily" style="float:right;"><i class="fas fa-star"></i> </a>
+	</div> 
+
+
+	<label type="receiver">Para:</label> <br>
+	<label type="category"]>Problema:</label> <br>
+	<label type="description"]>Descrição:</label>
+	
+    <div class="main">
+		<a>Comunicar um problema.</a>
+		
+			<input type="email" disabled="disabled" placeholder="doringooficial@hotmail.com" name="doringoemail">
+			
+			<select name="Problema" id="option_selected">
+				<optgroup label="Problemas com a minha conta">
+					<option value="1">Não consigo iniciar sessão na minha conta.</option>
+					<option value="2">Não consigo finalizar sessao na minha conta.</option>
+				</optgroup>
+				<optgroup label="Problemas com encomendas">
+					<option value="3">Não consigo adicionar items ao carrinho.</option>
+					<option value="4">Não consigo aceder ao meu carrinho.</option>
+					<option value="5">Não consigo aceder a pagina de pagamento.</option>
+					<option value="6">O meu pagamento foi mal sucedido.</option>
+				</optgroup>
+				<optgroup label="Outro">
+					<option value="7">Tenho outro problema nao listado acima.</option>
+				</optgroup>
+			</select>
+		
+			<input type="description" placeholder="Descreva o problema detalhadamente." id="Message"> 
+			<input type="submit" onclick="send_report()" value="Enviar"> </br>
+
+			<p id="success_msg" class="success">Obrigado por nos comunicar um problema!</p>
+	</div>
+	
+	<div class="rodape">
+		<footer>
+			<p>Copyright © Doringo. All rights reserved<br>
+		</footer>
+	</div>
+
+	<div class="rodape_social_media">
+		<footer>
+			<img onclick="open_fb()" src="facebook.png" alt="Doringo" class="shadowfilter_fb social_media">
+			<img onclick="open_twt()" src="twitter.png" alt="Doringo" class="shadowfilter_twt social_media">
+			<img onclick="open_insta()" src="instagram.png" alt="Doringo" class="shadowfilter_insta social_media">
+		</footer>
+	</div>
+	
+</body>
+</html>

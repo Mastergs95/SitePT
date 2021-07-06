@@ -1,0 +1,64 @@
+<html>
+	
+<head>
+    <title>Doringo | Sugestões</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="logo.ico">
+	<script src="javascript.js"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+	
+</head>
+
+<body>
+	
+	<div class="container1">
+	</div>
+
+
+	<div class="top_bar">
+		<a class="main_page_ref" href="index.html" src="logo.png" alt="Doringo" style="float:left;width:30px;height:80px;">
+		<a class="glow active" href="suggestions.html"><i class="far fa-lightbulb"></i> </a>
+		<a class="glow" href="reports.html"><i class="fas fa-bug"></i> </a>
+		<a class="glow" href="about.html"><i class="fas fa-info-circle"></i> </a>
+		<a class="daily" style="float:right;"><i class="fas fa-star"></i> </a>
+	</div>
+
+	
+	<label type="receiver">Para:</label> <br>
+	<label type="category"]>Sugestão:</label> <br>
+	<label type="description"]>Descrição:</label>
+
+	<div class="main">
+			<a>Enviar Sugestão.</a>
+	
+			<input type="email" disabled="disabled" placeholder="doringooficial@hotmail.com" name="doringoemail">
+		
+			<select name="Sugestao" id="suggestion_selected">
+				<optgroup label="Sugestões.">
+					<option value="1">Tenho uma sugestão para o programa.</option>
+				</optgroup>
+			</select>
+	
+			<input type="description" placeholder="Descreva a sua sugestão detalhadamente." id="Message"> 
+			<input type="submit" onclick="send_suggestion()" value="Enviar">
+
+			<p id="success_msg" class="success">Obrigado por nos enviar uma sugestão!</p>
+	</div>
+
+
+	<div class="rodape">
+		<footer>
+			<p>Copyright © Doringo. All rights reserved<br>
+		</footer>
+	</div>
+
+	<div class="rodape_social_media">
+		<footer>
+			<img onclick="open_fb()" src="facebook.png" alt="Doringo" class="shadowfilter_fb social_media">
+			<img onclick="open_twt()" src="twitter.png" alt="Doringo" class="shadowfilter_twt social_media">
+			<img onclick="open_insta()" src="instagram.png" alt="Doringo" class="shadowfilter_insta social_media">
+		</footer>
+	</div>
+	
+</body>
+</html>
